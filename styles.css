@@ -85,13 +85,13 @@ h1, h2 { font-family: var(--serif); letter-spacing: -.028em; }
 .section { padding: 108px 0; }
 h2 { margin-bottom: 23px; color: var(--petrol-deep); font-size: clamp(2.45rem, 4.7vw, 4.6rem); line-height: 1.03; }
 .story-section { background: #fff; }
-.story-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: 72px; align-items: center; }
+.story-grid { display: grid; grid-template-columns: 1.08fr .72fr; gap: 64px; align-items: center; }
 .story-copy > p:not(.eyebrow) { color: var(--muted); font-size: 1.04rem; }
 .story-copy strong { color: var(--petrol); }
 .mini-points { display: grid; gap: 10px; margin-top: 28px; }
 .mini-points span { width: fit-content; padding: 8px 13px; color: var(--petrol); background: var(--ice); border-radius: 999px; font-size: .82rem; font-weight: 700; }
 .preventive-visual { position: relative; margin: 0; }
-.preventive-visual img { width: 100%; min-height: 480px; object-fit: cover; border-radius: 32px; box-shadow: var(--shadow); }
+.preventive-visual img { width: 100%; min-height: 480px; object-fit: cover; object-position: center top; border-radius: 32px; box-shadow: var(--shadow); }
 .preventive-visual figcaption { position: absolute; left: -30px; bottom: 28px; max-width: 310px; padding: 20px 22px; color: var(--petrol); background: rgba(255,255,255,.95); border-left: 5px solid var(--turquoise); border-radius: 4px 18px 18px 4px; box-shadow: var(--shadow-sm); backdrop-filter: blur(10px); }
 .preventive-visual figcaption strong, .preventive-visual figcaption span { display: block; }
 .preventive-visual figcaption strong { font-family: var(--serif); font-size: 1.35rem; }
@@ -196,6 +196,7 @@ footer { padding: 45px 0 28px; color: rgba(255,255,255,.72); background: var(--p
   .facts-grid { grid-template-columns: repeat(2, 1fr); }
   .story-grid, .formula-layout { grid-template-columns: 1fr; gap: 50px; }
   .story-copy { max-width: 760px; }
+  .preventive-visual { width: min(540px, 100%); margin-inline: auto; }
   .preventive-visual figcaption { left: 24px; }
   .process-heading { grid-template-columns: 1fr; gap: 12px; }
   .timeline { grid-template-columns: repeat(2, 1fr); }
